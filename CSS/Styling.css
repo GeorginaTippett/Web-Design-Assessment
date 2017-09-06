@@ -1,0 +1,144 @@
+body{
+	background-image: url('../images/footballField.jpg');/*link to the provided background image*/
+	background-position: center;
+	background-size: cover;/*Background image will cover browser no matter what size*/
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	font-size: 100%;
+	font-family: 'Open Sans', Sans-Serif;
+}
+	/*I linked to a Google font because it's a clear, easy to read font and
+	is similar to the appearance of the example page. Using a Google font should help it look right on all browsers*/
+
+div {
+	width: 800px;/*This is the size I chose based on the visual appearance of the example page*/
+	max-width: 100%;
+	background-color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;/*I tried here to get rid of the tiny bit of image along the top and bottom, but couldn't remove it!!*/
+	padding-bottom: 10px;
+	margin: auto;
+	overflow: visible;
+}
+
+header {
+	color: #4c4c4c;/*I used a hex colour pallette to find the right shade of grey*/
+	font-weight: bolder;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align: center;/*to align the logo and title in the middle of page*/
+}
+
+nav{
+	background: linear-gradient(red, black);/*I used a gradient from black to red to achieve the desired look.*/
+	font-size: 250%;
+	font-weight: bold;/*to make the links large and bold*/
+	height: 75px;
+	margin: auto;
+	text-align: center;
+}
+
+a {
+	color: white;
+	font-size: 65%;/*I used a percentage here to achieve the right look and also make it flexible accross browsers*/
+	text-decoration: none;/*this removed the automatic underlines under hyperlinks*/
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 10px;
+	text-align: center;/*to align the links nicely in the middle of the background*/
+}
+
+img {
+	padding-left: 30px;/*aligns the image so that it's in line with the article above it*/
+	margin: auto;
+	max-width: 100%;/*making the picture stay within the parent frame - more responsive*/
+}
+
+table{
+	border-collapse: collapse;/*to merge the lines around table into one solid line instead of multiples lines*/
+	empty-cells: hide;/*I had to comment out some of the cells in the html index file to remove extra border lines. However 
+	I am concerned that this will cause problems with validity*/
+}
+
+table, th, td {
+	border: 1px solid black;
+	font-size: 100%;
+	padding: 2px;/*gives spacing to the table otherwise was too cramped*/
+	margin: auto;
+	empty-cells: hide;
+}	
+
+td{
+	color: grey;/*table content is coloured grey while titles are in black*/
+}
+
+
+#table2{
+	float: right;/*the competitions table is floated to the right while I added an image on the left*/
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	margin: auto;
+}
+/*I was unable to properly align the top of this table with the photo to its left...*/
+
+.article1{/*first article on the index page*/
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.article2{/*second article on index page*/
+	float: right;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 30px;
+	padding-bottom: 70px;
+}
+
+.article3{/*article on contact page*/
+	padding: 0px;
+	margin: auto;
+}
+
+/*
+#credit{
+	padding-right: none;
+	font-size: smaller;
+}
+I commented this out because this photo image credit was messing up the alignment of the table and wasn't sure how to fix it!*/
+
+#text2{
+	font-size: small;
+}
+
+#links{
+	font-size: 100%;
+	color: black;
+	padding-right: 0px;/*I manually removed the extra padding around links that I had added above, this will only affect this link*/
+	padding-left: 0px;/*removed padding from left side of link too*/
+	text-decoration: underline;/*I left the link in black but made it underlined so people know it's a link*/
+}
+
+#instructions{
+	font-size: small;
+}
+
+/*I tried styling the forms but didn't want to change it too much, I wanted it to be a really simple and easy to use design*/
+
+/*input {
+	width: 50px;
+	box-sizing: border-box;
+}*/
+
+
+footer {/*a Footer wasn't specified in the brief but I think it's important so added one and styled it so it doesn't interfere with design*/
+	clear: all;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: smaller;
+	text-align: center;
+}

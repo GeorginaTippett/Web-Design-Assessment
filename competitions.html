@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Georgina">
+	<meta name="description" content="Offical website for Oaktown Football Club">
+	<meta name="keywords" content="oaktown, football, soccer, club, local, sport, sports">
+	<title>Competitions at Oaktown Football Club</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Styling.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+	<header>
+		<img src="images/logo.png" alt ="Oaktown Football Club logo"><!--I didn't need to resize the photo here so no height or width attributes needed-->
+		<h1>Oaktown Football Club</h1>
+		<nav>
+			<a href="index.html" target="_blank">Home</a>
+			<a href="competitions.html" target="_blank">Competitions</a>
+			<a href="contact.html" target="_blank">Contact</a>
+		<!--I made these pages open in new tabs on browser but can easily be changed if needed-->
+		</nav>
+	</header><!--I orignially had this called <section> but it caused problems with the validator, because then both the <section> and <article> required a heading. I changed it to <div> to avoid this problem-->
+		<article class="article1">
+			<h2>Competitions</h2>
+			<p>This week’s game scores are:</p>
+			<table id="table2">
+				<tr>
+					<th>Day</th>
+					<th>Home Team</th>
+					<th>Away Team</th>
+					<th>Score</th>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>Woodfield FC</td>
+					<td>Oaktown FC</td>
+					<td>1-0</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>Oaktown FC</td>
+					<td>Norland FC</td>
+					<td>2-1</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>Oaktown FC U12s</td>
+					<td>Woodfield FC U12s</td>
+					<td>1-3</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>Lakehaven U6s</td>
+					<td>Oaktown FC U6s</td>
+					<td>4-5</td>
+				</tr>
+			<!--table styling will be done using CSS-->	
+			</table>
+		</article>
+		<img src="images/soccerBall.jpg" alt="soccer ball"><!--added this image to add interest to page-->
+<footer>Copyright &copy; Oaktown Football Club 2017</footer>
+<!--Even though it wasn't specified in the brief, I want the copyright info show on all pages in the footer-->
+<!--Footer was added into the <body> as that was better practice as identified by the validator-->
+</div>
+</body>
+</html>

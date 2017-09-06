@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Georgina">
+	<meta name="description" content="Offical website for Oaktown Football Club">
+	<meta name="keywords" content="oaktown, football, soccer, club, local, sport, sports">
+	<title>Contact Oaktown Football Club</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Styling.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- <script type="text/javascript" src="JS/jQuery.v3.2.1.js"></script> -->
+	<!-- <script type="text/javascript">
+		$(document).ready(function() {
+			$(.errors).after("<span>Please try again!</span>");
+		}); 
+		//this was my first attempt at question 5//
+		
+		<p id="error" onclick="errorFunction()">Click to submit.</p>  //this would appear in the html//
+
+		<script>
+		function errorFunction() {
+   		document.getElementById("error").innerHTML = "Sorry, please try again!";
+		}
+
+		</script>  //this is the corresponding javascript...//
+
+		This was my second attempt at question 5 - I understand the idea of using inner html now, but I still wasn't sure which paragraph to change and how I could include it on the Contact page. Also, the Jquery seemed to be interferring with my manual javascript error checks and alerts so I commented the link out!
+		
+		I tried  to use the j-query and inner html to create the error descriptions. however, i was finding that the jquery was creating problems with the javascript code I wrote myself (I am not sure exactly why but I think it was automatically checking the email field so my own alert messages weren't coming up properly until I commented it out!)  I commented out the jquery links in order for all my alert messages to show up on the contact page. I have left the alert messages instead of trying to use the inner html error description as I couldn't make both work and I was unsure which paragraph I should be trying to change -->
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<img src="images/logo.png" alt="Oaktown Football Club logo">
+			<!--I didn't need to resize the photo here so no height or width attributes needed-->
+			<h1>Oaktown Football Club</h1>
+			<nav id="navi">
+				<a href="index.html" target="_blank">Home</a>
+				<a href="competitions.html" target="_blank">Competitions</a>
+				<a href="contact.html" target="_blank">Contact</a>
+				<!--I made these pages open in new tabs on browser but can easily be changed if needed-->
+			</nav>
+		</header>
+		<section>
+			<h2>Contact Us</h2>
+			<article class="article3">
+				<h3>Secretary</h3>
+				<p>Name: Laci Tanner<br> Phone: (02) 6620 3324<br> Email: <a href="mailto:secretary@oaktownfa.com.au" id="links">secretary@oaktownfa.com.au</a></p>
+			</article>
+			<form name="registration" onsubmit="validateForm()">
+				Name:  <input type="text" class="required" name="name"><br>
+				<!--var1-->
+				Email:   <input type="email" class="required" name="email"><br>
+				<!--var2-->
+				Phone:  <input type="tel" class="required" name="phone"><br><br>
+				<!--var3-->
+				Team:
+				<select multiple name="team">
+					<option value="adults">Adults</option>
+					<option value="under 12">Under 12s</option>
+					<option value="under 6">Under 6s</option>
+				</select>
+				<p id="instructions">(hold down shift to select multiple options)</p>I am:<br>
+				<input type="radio" name="membership" value="thinking of joining" checked="checked">Thinking about joining the club<br>
+				<input type="radio" name="membership" value="already joined">Already a club member<br><br>
+				Comments: <textarea name="comments" class="required" rows="3" cols="20"></textarea><br>
+				<!--var4-->
+				Submit: <input type="submit" name="Submit" value="Submit">
+			</form>
+			<!--<p class="error">Sorry that didn't work</p> I have commented this out as I dont want it appearing on the page-->
+		</section>
+		<footer>Copyright &copy; Oaktown Football Club 2017</footer>
+	</div>
+	<script type="text/javascript" src="JS/formValidation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Georgina">
+	<meta name="description" content="Offical website for Oaktown Football Club">
+	<meta name="keywords" content="oaktown, football, soccer, club, local, sport, sports">
+	<title>Welcome to Oaktown Football Club</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Styling.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> Here I tried adding the w3 css link to my site to try using their tools to make it responsive. It was interfering with the appearance of my own code so I commented it out-->
+	<script type="text/javascript" src="JS/jQuery.v3.2.1.js"></script><!--I added the latest version locally-->
+</head>
+<body>
+	<div class="container">
+	<header>
+		<img src="images/logo.png" alt ="Oaktown Football Club logo"><!--I didn't need to resize the photo here so no height or width attributes needed-->
+		<h1>Oaktown Football Club</h1>
+		<nav>
+			<a href="index.html" target="_blank">Home</a>
+			<a href="competitions.html" target="_blank">Competitions</a>
+			<a href="contact.html" target="_blank">Contact</a>
+		<!--I made these pages open in new tabs on browser but can easily be changed if needed-->
+		</nav>
+	</header>
+		<article class="article1">
+<h2>Welcome to Oaktown Football Club</h2>
+			<p>Oaktown’s local football club plays every weekend during the football season.<br> We are very much a family orientated club with a strong focus on friendly competition and strong sporting ethics. We strive to provide opportunities for all members to develop their soccer skills in a supportive yet friendly team environment.</p>
+		<!--added line break in the code here for easier readability-->
+			<p>The club was founded in 1978 and has had a strong membership ever since.<br>We welcome new members and are always looking for volunteers to coach, help run the canteen and generally help out during the season.</p>
+		<!--added line break in the code here for easier readability-->
+			<p>If you have any questions, come along during a training session or after a game and introduce yourself.<br>Alternately you can find the Club Secretary’s contact details on our <a id="links" href="contact.html" >contact page</a>.</p>
+		</article>
+		<img src="images/boysFootball.jpg" alt="Boys playing Football" width="350" height="230"><!--resized to suit page better-->
+		<!--<p id="credit">Shutterstock 80615443</p> I tried adding this text here but was messing up my page design-->
+		<article class="article2">
+			<h2>Training Schedule:</h2>
+			<p id="text2">All training is held at the Oaktown Oval</p>
+			<table>
+				<tr>
+					<th>Team</th>
+					<!--<th></th> I commented these out because they were interferring with the appearance of the table and creating extra borders I couldn't remove! However the html validator is now picking up on this as an error...-->
+					<th colspan="2">Day / Time</th>
+				</tr>
+				<tr>
+					<td>Men's Football</td>
+					<td colspan="2">Wednesday 6:30pm–8pm</td>
+					<!--<td></td>-->
+				</tr>
+				<tr>
+					<td>U12s</td>
+					<td colspan="2">Tuesday 5:30pm–6:30pm</td>
+					<!--<td></td>-->
+				</tr>
+				<tr>
+					<td>U6s</td>
+					<td colspan="2">Saturday 9:30am–10:30am</td>
+					<!--<td></td>-->
+				</tr>
+			<!--Styling for the table will be added in the CSS file-->
+			</table>
+		</article>
+<footer>Copyright &copy; Oaktown Football Club 2017</footer>
+</div>
+<script type="text/javascript" src="JS/formValidation.js"></script>
+</body>
+</html>
